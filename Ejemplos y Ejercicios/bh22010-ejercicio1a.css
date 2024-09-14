@@ -1,0 +1,60 @@
+body {
+    margin: 20px;
+    line-height: 1.6;
+
+  }
+  
+  fichero {
+    display: block;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    background-color: rgb(164, 147, 197);
+  }
+  
+  ficha {
+    display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 10px;
+  }
+  
+  ficha::before {
+    content: "Ficha ID: " attr(id) " (Fecha de ingreso: " attr(fechaingreso) ")";
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  
+  nombre, apellido, direccion, email, website {
+    display: block;
+    margin-left: 20px;
+  }
+  
+  nombre::before { content: "Nombre: "; font-weight: bold; }
+  apellido::before { content: "Apellido: "; font-weight: bold; }
+  direccion::before { content: "Dirección: "; font-weight: bold; }
+  email::before { content: "Email: "; font-weight: bold; }
+  website::before { content: "Sitio web: "; font-weight: bold; }
+  
+  telefonos {
+    display: block;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  telefono {
+    display: block;
+    margin-left: 40px;
+  }
+  
+  telefono::before {
+    content: "Teléfono (" attr(tipo) "): ";
+    font-weight: bold;
+  }
+  
+  website[personal="true"]::after {
+    content: " (Página personal)";
+    font-style: italic;
+    color: #000000;
+  }

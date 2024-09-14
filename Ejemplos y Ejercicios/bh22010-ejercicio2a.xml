@@ -1,0 +1,25 @@
+<?xml-stylesheet type="text/css" href="bh22010-ejercicio2a.css"?>
+<!-- bh22010-ejercicio2a.xml BH22010 -->
+<pais nombre="El Salvador" area="21,041 km^2" codigo_telefonico="+503">
+    <monedas>
+        <moneda nombre="Dolar estadounidense" simbolo="USD"/>
+        <moneda nombre="Bitcoin" simbolo="BTC"/>
+    </monedas>
+    <idiomas>
+        <idioma tipo="oficial">Español</idioma>
+        <idioma tipo="autoctono">Nahuat</idioma>
+        <idioma tipo="segundo">Ingles</idioma>
+    </idiomas>
+
+    <departamento id="1" nombre="San Salvador">
+        <cabecera>San Salvador</cabecera>
+        <habitantes>1,700,000</habitantes>
+        <altura>545 MSNM</altura>
+    </departamento>
+
+    <departamento id="2" nombre="La Libertad">
+        <cabecera>Santa Tecla</cabecera>
+        <habitantes>850,000</habitantes>
+        <altura>945 MSNM</altura>
+    </departamento>
+</pais>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivos XML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Archivos XML</h1>
+    </header>
+    
+    <nav>
+        <a href="./index.html">INICIO</a>
+        <a href="./xml.html">XML</a>
+        <a href="./json.html">JSON</a>
+        <a href="./css.html">CSS</a>
+    </nav>
+    
+    <main>
+        <h2>Ejemplos y Ejercicios:</h2>
+        <ul>
+            <li><a href="#" class="xml-link" data-file="./Ejemplos y Ejercicios/bh22010-ejemplo1.xml">Ejemplo 1</a></li>
+            <li><a href="#" class="xml-link" data-file="./Ejemplos y Ejercicios/bh22010-ejercicio1a.xml">Ejercicio 1a</a></li>
+            <li><a href="#" class="xml-link" data-file="./Ejemplos y Ejercicios/bh22010-ejercicio1b.xml">Ejercicio 1b</a></li>
+            <li><a href="#" class="xml-link" data-file="./Ejemplos y Ejercicios/bh22010-ejemplo2.xml">Ejemplo 2</a></li>
+            <li><a href="#" class="xml-link" data-file="./Ejemplos y Ejercicios/bh22010-ejercicio2a.xml">Ejercicio 2a</a></li>
+            <li><a href="#" class="xml-link" data-file="./Ejemplos y Ejercicios/bh22010-ejercicio2b.xml">Ejercicio 2b</a></li>
+        </ul>
+        <div id="content-display" class="content-display"></div>
+    </main>
+    
+    <footer>
+        <p>TPI115 - Tarea de la Guía 31</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.xml-link').forEach(link => {
+                link.onclick = (e) => {
+                    e.preventDefault();
+                    fetch(link.dataset.file)
+                        .then(res => res.text())
+                        .then(data => document.getElementById('content-display').textContent = data);
+                };
+            });
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "fichero": {
+    "ficha": [
+      {
+        "nombre": "Antonio",
+        "apellido": "Barbero",
+        "direccion": "Calle de Los Andes, 45"
+      },
+      {
+        "nombre": "Rodrigo",
+        "apellido": "Benitez",
+        "direccion": "San Salvador, San Salvador",
+        "telefonos": {
+          "telefono": [
+            2332444,
+            77776666
+          ]
+        },
+        "email": "bh22010@ues.edu.sv",
+        "website": "http://xml.bh22010.tpi/"
+      },
+      {
+        "nombre": "Alejandro",
+        "apellido": "Hernandez",
+        "direccion": "San Salvador, San Salvador",
+        "telefonos": {
+          "telefono": [
+            1234576,
+            2332444
+          ]
+        },
+        "email": "hb22010@ues.edu.sv",
+        "website": "http://xml.hb22010.tpi/",
+        "documentacion": {
+          "dui": "",
+          "isss": "",
+          "afp": ""
+        }
+      }
+    ]
+  }
+}

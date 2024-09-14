@@ -1,0 +1,59 @@
+body {
+    margin: 20px; 
+  }
+  
+  pais {
+    display: block;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: rgb(110, 129, 168);
+  }
+  
+  pais::before {
+    content: "País: " attr(nombre);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  monedas, idiomas {
+    margin-bottom: 15px;
+  }
+  
+  moneda, idioma {
+    display: block;
+    margin-left: 20px;
+  }
+  
+  moneda::before {
+    content: "Moneda: ";
+    font-weight: bold;
+  }
+  
+  idioma::before {
+    content: "Idioma (" attr(tipo) "): ";
+    font-weight: bold;
+  }
+  
+  departamento {
+    display: block;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  
+  departamento::before {
+    content: "Departamento: " attr(nombre);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  cabecera, habitantes, altura {
+    display: block;
+    margin-left: 20px;
+  }
+  
+  cabecera::before { content: "Cabecera: "; font-weight: bold; }
+  habitantes::before { content: "Habitantes: "; font-weight: bold; }
+  altura::before { content: "Altura: "; font-weight: bold; }

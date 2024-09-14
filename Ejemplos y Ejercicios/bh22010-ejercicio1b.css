@@ -1,0 +1,69 @@
+body {
+    line-height: 1.6;
+    margin: 20px;
+  }
+  
+  ficha {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: rgb(110, 166, 168);
+  }
+  
+  ficha::before {
+    content: "Ficha ID: " attr(id);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  ficha::after {
+    content: "Fecha de ingreso: " attr(fechaingreso);
+    font-style: italic;
+    display: block;
+    margin-top: 5px;
+    color: #666;
+  }
+  
+  nombre, apellido, direccion, email, website {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  nombre::before { content: "Nombre: "; font-weight: bold; }
+  apellido::before { content: "Apellido: "; font-weight: bold; }
+  direccion::before { content: "Dirección: "; font-weight: bold; }
+  email::before { content: "Email: "; font-weight: bold; }
+  website::before { content: "Sitio web: "; font-weight: bold; }
+  
+  telefonos {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  telefono {
+    display: block;
+    margin-left: 20px;
+  }
+  
+  telefono::before {
+    content: "Teléfono (" attr(tipo) "): ";
+    font-weight: bold;
+  }
+  
+  documentacion {
+    display: block;
+    margin-top: 10px;
+    border-top: 1px dashed #ccc;
+    padding-top: 5px;
+  }
+  
+  dui::before { content: "DUI: "; font-weight: bold; }
+  isss::before { content: "ISSS: "; font-weight: bold; }
+  afp::before { content: "AFP: "; font-weight: bold; }
+  
+  dui, isss, afp {
+    display: block;
+    margin-left: 20px;
+  }

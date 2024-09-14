@@ -1,0 +1,34 @@
+{
+  "pais": {
+    "monedas": {
+      "moneda": [
+        "",
+        ""
+      ]
+    },
+    "idiomas": {
+      "idioma": [
+        "Español",
+        "Nahuat",
+        "Ingles"
+      ]
+    },
+    "departamento": [
+      {
+        "cabecera": "San Salvador",
+        "habitantes": "1,700,000",
+        "altura": ""
+      },
+      {
+        "cabecera": "Santa Tecla",
+        "habitantes": "850,000",
+        "altura": ""
+      },
+      {
+        "cabecera": "Sonsonate",
+        "habitantes": "500,000",
+        "altura": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+/* Estilos básicos para el XML */
+
+pais {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+  }
+  
+  departamento {
+    margin: 5px 0;
+  }
+  
+  cabecera {
+    font-weight: bold;
+  }
+  
+  habitantes {
+    color: green;
+  }
+  
+  altura {
+    color: red;
+  }
+  
